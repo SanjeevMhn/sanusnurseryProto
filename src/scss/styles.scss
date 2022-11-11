@@ -1,1 +1,11 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import './reset';
+
+a{
+    color: #000!important;
+    text-decoration: none!important;
+    &:hover{
+        color: #000!important;
+    }
+}
