@@ -1,11 +1,22 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 @import './reset';
+@import './pages/navbar';
 
-a{
-    color: #000!important;
-    text-decoration: none!important;
-    &:hover{
-        color: #000!important;
+a {
+    color: #000 !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #000 !important;
+    }
+}
+
+.form-control,
+.form-select {
+    &:focus {
+        box-shadow: none !important;
+        border-color: unset !important;
+        outline: #000 solid 2px !important;
     }
 }
