@@ -12,11 +12,6 @@ let paths = {
     'dest' : './dist/css/'
 }
 
-let pathsJs  = {
-    'src' : './scripts/app.js',
-    'dest' : './dist/js/'
-}
-
 let scssFiles = "./src/scss/**/*.scss";
 let scriptFiles = "./scripts/**/*.js";
 
@@ -34,26 +29,14 @@ function styles(){
     .pipe(gulp.dest(paths.dest))
 }
 
-function scripts(){
-    gulp.src(pathsJs.src)
-    .pipe(uglify())
-    .pipe(rename({
-        suffix: '.min'
-    }))
-    .pipe(gulp.dest(pathsJs.dest))
-}
-
-
 function watch(){
 
     gulp.watch(scssFiles).on('change',styles);
-    gulp.watch(scriptFiles).on('change',scripts);
 }
 
 exports.styles = styles;
-exports.scripts = scripts
 exports.watch = watch;
 
-let build = gulp.parallel(watch,styles,scripts);
+let build = gulp.parallel(watch,styles);
 
 exports.default = build

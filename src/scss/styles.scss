@@ -14,7 +14,7 @@ a {
 
 .form-control,
 .form-select {
-    &:focus {
+    &:focus,&:focus-visible {
         box-shadow: none !important;
         border-color: unset !important;
         outline: #000 solid 2px !important;
