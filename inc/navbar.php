@@ -5,14 +5,14 @@
         </a>
         <form action="#" method="post" class="search-items-form w-50">
             <div class="form-group d-flex align-items-center border-dark border rounded-pill p-2">
-                <select name="cat-select" id="" class="form-select w-25 border-top-0 border-start-0 border-bottom-0 rounded-0 border-dark">
-                    <option value="default">All Categories</option>
+                <!-- <select name="cat-select" id="" class="form-select w-25 border-top-0 border-start-0 border-bottom-0 rounded-0 border-dark">
+                    <option value="default">Categories</option>
                     <option value="flower">Flowers</option>
                     <option value="vegetable">Vegetable</option>
                     <option value="fruit">Fruit</option>
                     <option value="indoor">Indoor</option>
-                </select>
-                <div class="input-box w-75">
+                </select> -->
+                <div class="input-box w-100">
                     <input type="text" name="search-text" id="" class="form-control border-0" placeholder="Search Product...">
                     <div class="icon-container fs-5">
                         <i class="bi bi-search"></i>

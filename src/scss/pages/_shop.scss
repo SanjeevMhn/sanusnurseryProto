@@ -1,0 +1,34 @@
+.shop-section{
+    .shop-sidenav{
+        .categories{
+            .categories-list{
+                .list-link{
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.35rem;
+                    padding: 5px 0;
+                    span{
+                        flex: 1;
+                    }
+                    .product-count{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .shop-content{
+        .products-container{
+            .product-card{
+                border: 1px solid #ababab;
+                border-radius: 5px;
+                .product-desc{
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
