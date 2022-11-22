@@ -22,10 +22,10 @@ function styles(){
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(gulp.dest(paths.dest))
     .pipe(postcss([autoprefixer('last 2 versions'), cssnano()]))
-    .pipe(sourcemaps.write('./'))
     .pipe(rename({
         suffix: '.min'
     }))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dest))
 }
 
