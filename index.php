@@ -11,6 +11,7 @@
     </div>
 </section>
 <section class="shop-section">
+    <a id="home"></a>
     <div class="container py-5">
         <h2 class="header-text ft-oleo-script text-center pb-5">Shop</h2>
         <div class="row">

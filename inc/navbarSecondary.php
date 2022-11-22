@@ -7,7 +7,7 @@
                 </a>
             </li>
             <li class="list-item flex-fill">
-                <a href="#" class="list-item p-3 d-flex justify-content-center align-items-center">
+                <a href="#home" class="list-item p-3 d-flex justify-content-center align-items-center">
                     <span class="title-text">Shop</span>
                 </a>
             </li>
