@@ -11,8 +11,8 @@
     </div>
 </section>
 <section class="shop-section">
-    <div class="container">
-        <h2 class="header-text ft-nunito text-center py-5">Shop</h2>
+    <div class="container py-5">
+        <h2 class="header-text ft-oleo-script text-center pb-5">Shop</h2>
         <div class="row">
             <div class="col-3 shop-sidenav">
                 <form action="#" method="post">
@@ -26,7 +26,7 @@
                     </div>
                 </form>
                 <div class="categories pt-4">
-                    <h2 class="sub-header-text pb-2 text-decoration-underline">Categories</h2>
+                    <h5 class="sub-header-text pb-2 text-decoration-underline">Categories</h5>
                     <ul class="categories-list list-unstyled p-0 m-0 w-100">
                         <li class="list-item">
                             <a href="#" class="list-link">
@@ -65,30 +65,42 @@
                 <nav class="product-list-nav d-flex align-items-center justify-content-between py-1">
                     <h5 class="product-list-detail mb-0">Showing 12 of 50 items</h5>
                     <div class="product-card-view-mode d-flex align-items-center">
-                        <a href="#" class="grid-view d-flex align-items-center justify-content-center fs-4 py-1 px-2">
+                        <a href="#" class="grid-view view-order d-flex align-items-center justify-content-center fs-4 py-1 px-2">
                             <i class="bi bi-grid-3x3-gap-fill"></i>
                         </a>
-                        <a href="#" class="grid-view d-flex align-items-center justify-content-center fs-4 py-1 px-2">
+                        <a href="#" class="list-view view-order d-flex align-items-center justify-content-center fs-4 py-1 px-2">
                             <i class="bi bi-list"></i>
                         </a>
                     </div>
                 </nav>
-                <div class="products-container row row-cols-auto row-cols-lg-3">
-                    <?php for($i=0; $i<12; $i++){ ?>
-                    <div class="col mb-4">
-                        <div class="product-card">
-                            <div class="product-img img-container-md">
-                                <img src="./assets/images/placeholder-image.png" alt="">
-                            </div>
-                            <div class="product-data p-4">
-                                <h4 class="product-name pb-2">Lorem Ipusm</h4>
-                                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto, quo minima ab nisi labore ea repellendus voluptatem sapiente ratione officia? Temporibus assumenda ad placeat, alias ullam iste id dolorum.</div>
+                <div class="products-container row row-cols-auto row-cols-md-2 row-cols-lg-3">
+                    <?php for ($i = 0; $i < 12; $i++) { ?>
+                        <div class="col mb-4">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="./assets/images/placeholder-image.png" alt="">
+                                </div>
+                                <div class="product-data p-4">
+                                    <h4 class="product-name pb-2">Lorem Ipusm</h4>
+                                    <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto, quo minima ab nisi labore ea repellendus voluptatem sapiente ratione officia? Temporibus assumenda ad placeat, alias ullam iste id dolorum.</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <?php } ?>
                 </div>
+                <div class="pagination-content d-flex justify-content-center">
+                    <button class="previous-page page-btn d-block" type="button">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button type="button" class="current-page d-block page-btn">1</button>
+                    <button type="button" class="next-page d-block page-btn">2</button>
+                    <button class="next-page page-btn d-block" type="button">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
             </div>
+
+
         </div>
     </div>
 </section>

@@ -4,8 +4,8 @@
 @import './pages/navbar';
 @import './pages/shop';
 
-body{
-    font-family: 'Nunito',sans-serif;
+body {
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
 
@@ -28,10 +28,11 @@ a {
     }
 }
 
-.form-control{
+.form-control {
+
     &:focus,
-    &:focus-visible{
-        outline: unset!important;
+    &:focus-visible {
+        outline: unset !important;
     }
 }
 
@@ -78,6 +79,10 @@ a {
     }
 }
 
+.ft-oleo-script {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
 .ft-nunito {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -97,5 +102,33 @@ a {
         position: absolute;
         right: 10px;
         cursor: pointer;
+    }
+}
+
+.page-btn {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    color: #266d2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+        border-right: unset;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &:nth-child(even) {
+        &:not(:last-child) {
+            border-right: unset;
+        }
+    }
+
+    &:last-child {
+        border-left: unset;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 }

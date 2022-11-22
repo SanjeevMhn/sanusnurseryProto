@@ -1,6 +1,6 @@
 <nav class="primary-nav border border-dark border-top-0 border-left-0 border-right-0">
     <div class="container  d-flex align-items-center justify-content-center py-3 px-5">
-        <a href="#" class="d-block me-auto fs-3 fw-bold monospace">
+        <a href="#" class="d-block me-auto fs-3 fw-bold ft-oleo-script company-logo">
             Sanu's Nursery
         </a>
         <form action="#" method="post" class="search-items-form w-50">
